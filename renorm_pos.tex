@@ -4,9 +4,9 @@
 % data according to the instructions in PoSauthmanual.pdf
 \documentclass{PoS}
 
-\title{Contribution title}
+\title{Improved Lattice Renormalization Group Techniques}
 
-\ShortTitle{Short Title for header}
+\ShortTitle{Improved Lattice RG}
 
 \author{\speaker{First Author}\thanks{A footnote may follow.}\\
         Author affiliation\\
@@ -26,9 +26,30 @@
 
 \begin{document}
 
-\section{Intruduction}
+\section{Introduction}
+
+\section{Monte Carlo Renormalization Group}
+Monte Carlo Renormalization Group (MCRG) is a way to study the renormalization properties of a theory.
+In MCRG you perform RG transformations to integrate out high momentum modes on the lattice.
+Doing so changes the lattice spacing from $a \rightarrow 2a$.
+Each iterative RG block transformation flows the system in the infinite dimensinonal coupling space toward the renormalized trajectory in irrelevant directoins and along the renormalized trajectory in relevant directions.
+The flow will also go away from ultraviolet fixed points and towards infrared fixed points.
+By matching the lattice action $S(\beta_1,n_b) \equiv S(\beta_2,n_{b-1})$, on the renormalized trajectory it is possible to construct the bare step scaling function.
+The one hang up with this method is that to find the step scaling function you must be on the renormalized trajectory.
+Because our lattices are finite, we have a finite number of blocking steps therefore we must optimize such that we reach the renormalized trajectory in as few steps as possible.
+The traditional way of optimizing MCRG is to tune one of the smearing parameters in the block transformation.
+This results in a different RG transformation being perfomred at each bare coupling, meaning that each bare coupling is probing a slightly different renormalized trajectory.
+In most practical uses of MCRG this has not been a prolbem, however in the study of theories in the conformal window this can blur the location of the infrared fixed point.
+
+
 \section{Wilson Flow MCRG}
 Some paragraph talking about the Wilson Flow.
+
+The properties of the Wilson Flow make it amenable as an optimization step before performing an RG block transformation.
+The Wilson flow will continuously move the system in the infitite dimensional coupling space on a surface of constant lattice spacing.
+By optimizing a small amount of wilson flow we can come very close to the renormalized trajectory and then preform a fixed blocking step.
+Because we are no longer changing the renormalized trajectory in the optimization step we probe a unique renormalized trajectory, allowing us to construct a unique step scaling function.
+
 
 
 \section{Results for 12 Flavors}
