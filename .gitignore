@@ -1,0 +1,9 @@
+PoS.cls
+PoSlogo.pdf
+PoSauthmanual.pdf
+PoSlogo.ps
+PoStemplate.doc
+
+*.aux
+*.log
+*.swp
