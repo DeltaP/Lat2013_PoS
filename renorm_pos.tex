@@ -11,7 +11,7 @@
 
 \ShortTitle{Improved Lattice RG}
 
-\author{\speaker{Gregory Petropoulos}\thanks{A footnote may follow.}\\
+\author{\speaker{Gregory Petropoulos}\\
         University of Colorado Boulder\\
         E-mail: \email{gregory.petropoulos@colorado.edu}}
 
@@ -19,13 +19,14 @@
         University of Colorado Boulder}
 \author{Anna Hasenfratz\\
         University of Colorado Boulder}
-\author{Another Author\\
+\author{David Schaich\\
         University of Colorado Boulder}
 
 
 
 \abstract{
-We compute the step scaling function for SU(3) lattice gauge theories with many fundamental fermions using a fully non-perturbative Wilson flow optimized Monte Carlo Renormalization Group technique.
+
+We compute the step scaling function for SU(3) lattice gauge theories with twelve fundamental fermions using a fully non-perturbative Wilson flow optimized Monte Carlo Renormalization Group technique.
 By using Wilson flow to approach the renormalized trajectory of a specific RG transformation we are able to determine the unique step scaling function of a fixed renormalization group scheme.
 We apply our Wilson Flow MCRG technique to SU(3) gauge theory with 12 flavors in the chiral limit and find an infrared fixed point. By choosing different renormalization group schemes we are able to move the fixed point but the existence of the fixed point is universal.}
 
@@ -33,14 +34,23 @@ We apply our Wilson Flow MCRG technique to SU(3) gauge theory with 12 flavors in
 		July 29 - August 3, 2013\\
 		Mainz, Germany}
 
-
 \begin{document}
 
 \section{Introduction}
-We continue our lattice invstigations of strongly-coupled gauge fermion systems beyond QCD.
-This proceedings covers recent improvments that we have made in the method we use to find the bare steps scaling function using Monte Carlo Renormaliztion Group (MCRG) techniques.
-We introduce a Wilson Flow optimized MCRG, or WMCRG as an improved tool to find the bare step scaling function.
+For the past several years a section of the lattice community has been involved in studying beyond standard model physics.  
+This effort has largely been made possible by the increased availability of computational resources and more recently improvements in lattice methods.
+To fully understand beyond standard model systems it is important to study them with several techniques.
+This allows a check for consistency and also provides a reference when improving traditional lattice QCD techniques for applications in non QCD theories.
 
+The Monte Carlo Renormalization Group (MCRG) is one of the analysis methods that our group has been working with to study SU(3) gauge theories with $N_f$ fermion flavors.
+We have improved the optimization step of MCRG as described in \cite{last year} by using a Wilson Flow optimization.
+In this proceedings we expand our investigation of Wilson Flow optimized MCRG (WMCRG) as an improved tool to find the bare step scaling function.
+
+One controversial theory that we focus on in this proceedings is SU(3) gauge theory with 12 flavors of fermions in the fundamental representation.
+Using our improved MCRG technique explained in section \ref{sec:wmcrg} we find that SU(3) $N_f=12$ is has an infrared fixed point and is conformal.
+This result is consistent with past investigations studying finite temperature phase transitions \cite{} and ongoing investigations into the eigenvalue mode number \cite{} and finite size scaling \cite{}.
+
+The organization of this proceedings is as follows.
 Section \ref{sec:mcrg} of this proceedings will be a brief overview of MCRG methods.  
 Section \ref{sec:wmcrg} discusses optimizing MCRG with the Wilson Flow.  
 Section \ref{sec:results} summarizes our study of the step scaling function for SU(3) with 12 flavors of chiral fermions in the fundamental representation using WMCRG.
@@ -49,43 +59,43 @@ Section \ref{sec:results} summarizes our study of the step scaling function for 
 \label{sec:mcrg}
 The Monte Carlo Renormalization Group is a way to study the renormalization properties of a quantum field theory.
 In MCRG you perform RG transformations to integrate out high momentum modes.
-On the lattice this is acomplished by performing a block tranformation that changes the lattice spacing from $a \rightarrow 2a$.
-Each iterative RG block transformation flows the system in the infinite dimensinonal coupling space.
-Flow moves toward the renormalized trajectory in irrelevant directoins and along the renormalized trajectory in relevant directions.
+On the lattice this is accomplished by performing a block transformation that changes the lattice spacing from $a \rightarrow 2a$.
+Each iterative RG block transformation flows the system in the infinite dimensional coupling space.
+Flow moves toward the renormalized trajectory in irrelevant directions and along the renormalized trajectory in relevant directions.
 The flow along the renormalized trajectory flows from ultraviolet fixed points and towards infrared fixed points.
 
-By matching the lattice action $S(\beta_1,n_b) \equiv S(\beta_2,n_{b-1})$, on the renormalized trajectory it is possible to construct the bare step scaling function.When the lattice actions are identical, all the observalbes will be identical.
-We use the plaquette, the six link loops and the square eight link loop to perform the matching; using small gauge observables we are able to block down to small lattice sizes.
+By matching the lattice action $S(\beta_1,n_b) \equiv S(\beta_2,n_{b-1})$, on the renormalized trajectory it is possible to construct the bare step scaling function.When the lattice actions are identical, all the observables will be identical.
+We use the plaquette, the six link loops and the square eight link loop to perform the matching.
+Using small gauge observables allows us to block down to small lattice sizes.
 We perform the matching observable by observable, in each case we fit the observable as a function of beta to a function to smooth out statistical fluctuations and so that we can interpolate intermediate values.
 We find that a cubic fit is sufficient.
 
 The one difficulty with this method is that to find the step scaling function you must be on the renormalized trajectory.
-Because our lattices are finite, we have a finite number of blocking steps.
+Because our lattices are finite, we have a finite number of blocking steps, $n_b$.
 Therefore we must optimize such that we reach the renormalized trajectory in as few steps as possible.
 The traditional way of optimizing MCRG is to tune one of the smearing parameters in the block transformation.
-This results in a different RG transformation being perfomred at each bare coupling, meaning that each bare coupling is probing a slightly different renormalized trajectory.
-In most practical uses of MCRG this has not been a prolbem, however in the study of theories in the conformal window this can blur the location of the infrared fixed point.
-
-
+This results in a different RG transformation being performed at each bare coupling, meaning that each bare coupling is probing a slightly different renormalized trajectory.
+In most practical uses of MCRG this has not been a problem, however in the study of theories in the conformal window this can blur the location of the infrared fixed point.
 
 \section{Wilson Flow MCRG}
 \label{sec:wmcrg}
 \begin{figure}[th]
   \centering
   \includegraphics[height=3in]{fig/wilson_flow_opt.png}
-  \caption{insert caption here}
+  \caption{In a theory with relevant coupling $\beta$ and irrelevant couplings $\beta'$ and $\beta''$ the Wilson Flow (blue) moves the system on a surface of constant lattice spacing.  We choose an amount of Wilson Flow that moves us from our starting position in coupling space closest to the renormalized trajectory (yellow star).  We then proceed with MCRG blocking (green) that moves us along the renormalized trajectory (orange).}
   \label{fig:wflow_opt}
 \end{figure}
 
-Some paragraph talking about the Wilson Flow.
-Some paragraph talking about the Wilson Flow.
-Some paragraph talking about the Wilson Flow.
-Some paragraph talking about the Wilson Flow.
-Some paragraph talking about the Wilson Flow.
+The Wilson Flow is a continuous smearing transformation that can be related to the $\bar{MS}$ scheme in perturbation theory.
+The Wilson Flow removes UV fluctuations but does not effect IR physics.
+As shown in figure \ref{fig:wflow_opt} the Wilson Flow moves the system along a surface of constant lattice scale in the infinite dimensional action space.
 
-The properties of the Wilson Flow make it amenable as an optimization step before performing an RG block transformation.
-The Wilson flow will continuously move the system in the infitite dimensional coupling space on a surface of constant lattice spacing.
-By optimizing a small amount of wilson flow we can come very close to the renormalized trajectory and then preform a fixed blocking step.
+The Wilson Flow can be used on its own to compute a renormalized step-scaling function using a similar method to the Schrödinger functional method.
+This approach is promising but is only well understood at weak couplings.
+At stronger couplings in the presence of an infrared fixed point it is not clear how to interpret the continuum limit.
+
+The Wilson flow will continuously move the system in the infinite dimensional coupling space on a surface of constant lattice spacing.
+By optimizing a small amount of Wilson Flow we can come very close to the renormalized trajectory and then preform a fixed blocking step.
 Because we are no longer changing the renormalized trajectory in the optimization step we probe a unique renormalized trajectory, allowing us to construct a unique step scaling function.
 
 
@@ -104,7 +114,7 @@ Because we are no longer changing the renormalized trajectory in the optimizatio
     \caption{$8^4-16^4-32^4$}
     \label{fig:8-16-32_44}
   \end{subfigure}
-  \caption{Plot \ref{fig:6-12-24_33} on the left shows the bare step scaling function predicted by three lattice matching with $6^4$, $12^4$, and $24^4$ lattices blocked down to $3^4$.  Plot \ref{fig:8-16-32_44} on the right shows the bare step scaling function predicted by three lattice matching with $8^4$, $16^4$, and $32^4$ lattices blocked down to $4^4$.  Scheme 1 is showen in red, scheme 2 is shown in black and scheme 3 is shown in blue.  The error bars come from the standard deviation of the step scaling predicted by different observables.}
+  \caption{Plot \ref{fig:6-12-24_33} on the left shows the bare step scaling function predicted by three lattice matching with $6^4$, $12^4$, and $24^4$ lattices blocked down to $3^4$.  Plot \ref{fig:8-16-32_44} on the right shows the bare step scaling function predicted by three lattice matching with $8^4$, $16^4$, and $32^4$ lattices blocked down to $4^4$.  Scheme 1 is shown in red, scheme 2 is shown in black and scheme 3 is shown in blue.  The error bars come from the standard deviation of the step scaling predicted by different observables.}
 \label{fig:multischeme}
 \end{figure}
 
@@ -112,21 +122,27 @@ Our simulation uses a nHPY smeared staggered action with a negative adjoint plaq
 The nHYP smearing parameters used in our fermion action are (0.5, 0.5, 0.4).
 The adjoint term in our action is included to let us avoid a well-known spurious ultraviolet fixed point caused by lattice artifacts.
 The adjoint bare coupling is related to the fundamental bare coupling by $\beta_A=-0.25\beta_F$, and implies that $\beta_F=12/g^2$ at the perturbative level.
-To reach the chiral limit our configurations were generated with anti periodic bouldary conditions and zero mass.
+To reach the chiral limit our configurations were generated with anti periodic boundary conditions and zero mass.
 All of our analysis was carried out at couplings weaker than the s4 broken phase \cite{}.
 
-We performed three lattice matching with volumes $6^4-12^4-24^4$, $8^4-16^4-32^4$, and $12^4-24^4-48^4$.
-We investigated three different scheems by changing the nHYP smearig parameters in our block transformations.
+We performed three lattice matching \cite{} with volumes $6^4-12^4-24^4$ and $8^4-16^4-32^4$.
+Using the $6^4-12^4-24^4$ data set we identify the bare step scaling function with the matching done blocking the lattices to a final volume $V_f=3^4$.
+The number of blocking steps on the largest volume is $n_b=3$.
+Using the $8^4-16^4-32^4$ data set we identify the bare step scaling function with $n_b=3$ and $V_f=4^4$.
+On both data sets we investigated three different schemes by changing the nHYP smearing parameters in our block transformations.
 Scheme 1 used nHYP smearing parameters (0.6, 0.2, 0.2), scheme 2 used nHYP smearing parameters (0.6, 0.3, 0.2), and scheme 3 used nHYP smearing parameters (0.65, 0.3, 0.2).
 
 Figure \ref{fig:multischeme} summarizes our results for 12 flavors.
-All of the step scaling functions show a clear sign of an infrared fixed point.
+All of the step scaling functions show a clear sign of an infrared fixed point where the bare step scaling function is zero.
 We also observe that schemes with more strongly smeared RG block transformations move the fixed point into stronger coupling.
-Again we stress that the location of the fixed point is scheme dependant but its existance is not.
+Again we stress that the location of the fixed point is scheme dependant but its existence is not.
 
-Althogh in principle we can block our  $8^4$, $16^4$, and $32^4$ data set one more time to achieve a final blocked lattice size of $2^4$ we are currently unable to reliably predict the step scaling function due to a lack of statistics.
-Figure \ref{fig:no22} shows that the blocked plaquette for matching between $32^4$ and $16^4$ volumes blocked down to $2^4$ has large fluctuations.
-Although the fits help tame these fluctuations they are large enough to wash out the small values of the step scaling function that we expect from figure \ref{fig:multischeme}.
+Although in principle we can block our  $8^4$, $16^4$, and $32^4$ lattices one more time to achieve a final blocked lattice size of $2^4$ we have found that statistical noise starts to become a problem.
+In scheme 2 and especially scheme 3 the fluctuations are enough to make the matching unreliable with our current statistics.
+It is important to stress that this is an issue of statistics and can be solved by either generating more $32^4$ configurations at the couplings that already have generating new $32^4$ configurations at intermediate values of the bare coupling.
+With our current data we are able to construct the step scaling function for scheme 1.
+We believe that there still may be systematic effects from fitting to noisy data and will work on improving this signal in the future.
+Figure \ref{fig:scheme7} shows the step scaling function predicted by all of our data for scheme 1.
 
 \begin{figure}[th]
   \centering
@@ -137,15 +153,17 @@ Although the fits help tame these fluctuations they are large enough to wash out
 
 \section{Conclusion}
 \label{sec:conclusion}
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+In this proceedings we have shown that WMCRG is a useful new tool for studying the renormalization group properties of theories beyond the standard model.
+Using WMCRG we have shown that SU(3) gauge theory with 12 flavors of chiral fermions in the fundamental representation has an IRFP.
+This result is consistent with our findings using other methods as well as the work of \cite{}.
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Our current results are largely statistics limited.
+Despite differences in the exact value of the bare step scaling function different data sets the smoking gun crossing indicating an IRFP exists in every data set.
+Figure \ref{fig:scheme7} shows that the given error bars from each $n_b$ $V_f$ combination are likely underestimated due to systematic effects such as finite volume.
+An estimation of these systematic effects and their uncertainty can be found in comparing $n_b=3$ with $V_f=3^4$ and $V_f=4^4$.
+An estimation of systematic effects due to $n_b$ can be estimated from $n_b=4$ $V_f=2^4$ but since the matching analysis for this data set was very noisy it is not as accurate a predictor of the effects of increased blocking.
+We expect the step scaling function for  $8^4$, $16^4$, and $32^4$ lattices blocked down to $2^4$ to change as we add more bare coupling values and increase the statistics across the board.
 
 \section{Acknowledgments}
 \label{sec:acknowledgments}
