@@ -6,6 +6,10 @@
 \usepackage{graphicx}
 \usepackage{caption}
 \usepackage{subcaption}
+\usepackage{amsmath}
+\usepackage{cancel}
+
+\newcommand{\Sb}{\ensuremath{\cancel{S^4}} }
 
 \title{Improved Lattice Renormalization Group Techniques}
 
@@ -43,12 +47,13 @@ To fully understand beyond standard model systems it is important to study them 
 This allows a check for consistency and also provides a reference when improving traditional lattice QCD techniques for applications in non QCD theories.
 
 The Monte Carlo Renormalization Group (MCRG) is one of the analysis methods that our group has been working with to study SU(3) gauge theories with $N_f$ fermion flavors.
-We have improved the optimization step of MCRG as described in \cite{last year} by using a Wilson Flow optimization.
+We have improved the optimization step of MCRG as described in \cite{Petropoulos:2012Lat12} by using a Wilson Flow optimization.
 In this proceedings we expand our investigation of Wilson Flow optimized MCRG (WMCRG) as an improved tool to find the bare step scaling function.
 
 One controversial theory that we focus on in this proceedings is SU(3) gauge theory with 12 flavors of fermions in the fundamental representation.
+This system has been studied by many groups \cite{Appelquist:2009ty, Deuzeman:2009mh, Hasenfratz:2011xn, Fodor:2011tu, DeGrand:2011cu, Cheng:2011ic, Cheng:2013eu, Fodor:2012uw, Fodor:2012et, Appelquist:2011dp, Aoki:2012eq, Aoki:2013pca, Itou:2012qn, Lin:2012iw, Jin:2012dw} and is also covered in a recent review \cite{Giedt:2012LAT}.
 Using our improved MCRG technique explained in section \ref{sec:wmcrg} we find that SU(3) $N_f=12$ is has an infrared fixed point and is conformal.
-This result is consistent with past investigations studying finite temperature phase transitions \cite{} and ongoing investigations into the eigenvalue mode number \cite{} and finite size scaling \cite{}.
+This result is consistent with past investigations studying finite temperature phase transitions \cite{Schaich:2012fr} and ongoing investigations into the eigenvalue mode number \cite{} and finite size scaling \cite{Hasenfratz:2013eka}.
 
 The organization of this proceedings is as follows.
 Section \ref{sec:mcrg} of this proceedings will be a brief overview of MCRG methods.  
@@ -86,11 +91,11 @@ In most practical uses of MCRG this has not been a problem, however in the study
   \label{fig:wflow_opt}
 \end{figure}
 
-The Wilson Flow is a continuous smearing transformation that can be related to the $\bar{MS}$ scheme in perturbation theory.
+The Wilson Flow is a continuous smearing transformation\cite{Narayanan:2006rf} that can be related to the $\bar{MS}$ scheme in perturbation theory\cite{Luscher:2010iy}.
 The Wilson Flow removes UV fluctuations but does not effect IR physics.
 As shown in figure \ref{fig:wflow_opt} the Wilson Flow moves the system along a surface of constant lattice scale in the infinite dimensional action space.
 
-The Wilson Flow can be used on its own to compute a renormalized step-scaling function using a similar method to the Schrödinger functional method.
+The Wilson Flow can be used on its own to compute a renormalized step-scaling function using a similar method to the Schrödinger functional method\cite{Fodor:2012td, Fodor:2012qh}.
 This approach is promising but is only well understood at weak couplings.
 At stronger couplings in the presence of an infrared fixed point it is not clear how to interpret the continuum limit.
 
@@ -106,12 +111,12 @@ Because we are no longer changing the renormalized trajectory in the optimizatio
   \centering
   \begin{subfigure}[b]{0.48\textwidth}
     \includegraphics[width=\textwidth]{fig/12flav_6-12-24_3lm.pdf}
-    \caption{$6^4-12^4-24^4$}
+    %\caption{$6^4-12^4-24^4$}
     \label{fig:6-12-24_33}
   \end{subfigure}
   \begin{subfigure}[b]{0.48\textwidth}
     \includegraphics[width=\textwidth]{fig/12flav_8-16-32_44_as_3lm.pdf}
-    \caption{$8^4-16^4-32^4$}
+    %\caption{$8^4-16^4-32^4$}
     \label{fig:8-16-32_44}
   \end{subfigure}
   \caption{Plot \ref{fig:6-12-24_33} on the left shows the bare step scaling function predicted by three lattice matching with $6^4$, $12^4$, and $24^4$ lattices blocked down to $3^4$.  Plot \ref{fig:8-16-32_44} on the right shows the bare step scaling function predicted by three lattice matching with $8^4$, $16^4$, and $32^4$ lattices blocked down to $4^4$.  Scheme 1 is shown in red, scheme 2 is shown in black and scheme 3 is shown in blue.  The error bars come from the standard deviation of the step scaling predicted by different observables.}
@@ -123,7 +128,7 @@ The nHYP smearing parameters used in our fermion action are (0.5, 0.5, 0.4).
 The adjoint term in our action is included to let us avoid a well-known spurious ultraviolet fixed point caused by lattice artifacts.
 The adjoint bare coupling is related to the fundamental bare coupling by $\beta_A=-0.25\beta_F$, and implies that $\beta_F=12/g^2$ at the perturbative level.
 To reach the chiral limit our configurations were generated with anti periodic boundary conditions and zero mass.
-All of our analysis was carried out at couplings weaker than the s4 broken phase \cite{}.
+All of our analysis was carried out at couplings weaker than the \Sb phase\cite{}.
 
 We performed three lattice matching \cite{} with volumes $6^4-12^4-24^4$ and $8^4-16^4-32^4$.
 Using the $6^4-12^4-24^4$ data set we identify the bare step scaling function with the matching done blocking the lattices to a final volume $V_f=3^4$.
@@ -171,10 +176,7 @@ This research was partially supported by the U.S. Department of Energy (DOE) thr
 Our code is based in part on the MILC Collaboration’s public lattice gauge theory software.
 Numerical calculations were carried out on the HEP-TH and Janus clusters at the University of Colorado; at Fermilab under the auspices of USQCD supported by the DOE; and at the San Diego Computing Center through XSEDE supported by National Science Foundation Grant No. OCI-1053575.
 
-\begin{thebibliography}{99}
-\bibitem{...} 
-....
-
-\end{thebibliography}
+\bibliographystyle{utphys}
+\bibliography{renorm_pos}
 
 \end{document}
