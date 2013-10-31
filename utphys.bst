@@ -72,7 +72,8 @@
 %
 % "New-style" arXiv identifiers are also supported.
 %
-%     archivePrefix = "arXiv",%     eprint    = "0707.3168",
+%     archivePrefix = "arXiv",
+%     eprint    = "0707.3168",
 %     primaryClass = "hep-th",
 %
 % produces

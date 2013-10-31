@@ -41,16 +41,17 @@ This effort has largely been made possible by the increased availability of comp
 To fully understand beyond standard model systems it is important to study them with several techniques.
 This allows a check for consistency and also provides a reference when improving traditional lattice QCD techniques for applications in non QCD theories.
 
-The Monte Carlo Renormalization Group (MCRG) is one of the analysis methods that our group has been working with to study SU(3) gauge theories with $N_f$ fermion flavors.
+The Monte Carlo Renormalization Group (MCRG) is one of the analysis tools that we have been using to study SU(3) gauge theories with $N_f$ fermion flavors.
 We have improved the optimization step of MCRG as described in~\cite{Petropoulos:2012mg} by using a Wilson Flow optimization.
 In this proceedings we expand our investigation of Wilson Flow optimized MCRG (WMCRG) as an improved tool to find the bare step scaling function.
 
 One controversial theory that we focus on in this proceedings is SU(3) gauge theory with 12 flavors of fermions in the fundamental representation.
+This system has been studied by many groups \cite{Appelquist:2009ty, Deuzeman:2009mh, Fodor:2011tu, Hasenfratz:2011xn, DeGrand:2011cu, Cheng:2011ic, Fodor:2012uw, Fodor:2012et, Appelquist:2011dp, Aoki:2012eq, Aoki:2013pca, Itou:2012qn, Lin:2012iw, Jin:2012dw, Cheng:2013eu, Hasenfratz:2013uha, Hasenfratz:2013eka} and is also covered in a recent review~\cite{Giedt:2012LAT}.
 Using our improved MCRG technique explained in section \ref{sec:wmcrg} we find that SU(3) $N_f = 12$ has an infrared fixed point and is conformal.
-This result is consistent with past investigations studying finite temperature phase transitions~\TODO{\cite{}} and ongoing investigations into the eigenvalue mode number~\TODO{\cite{}} and finite size scaling~\cite{Hasenfratz:2013eka}.
+This result is consistent with past investigations studying finite temperature phase transitions~\cite{Schaich:2012fr, Hasenfratz:2013uha} and ongoing investigations into the eigenvalue mode number~\cite{Cheng:2013eu} and finite size scaling~\cite{Hasenfratz:2013eka}.
 
 The organization of this proceedings is as follows.
-\secref{sec:mcrg} of this proceedings will be a brief overview of MCRG methods.
+\secref{sec:mcrg} briefly reviews MCRG methods.
 \secref{sec:wmcrg} discusses optimizing MCRG with the Wilson Flow.
 \secref{sec:results} summarizes our study of the step scaling function for SU(3) with 12 flavors of massless fermions in the fundamental representation using WMCRG.
 % ------------------------------------------------------------------
@@ -93,11 +94,11 @@ In most practical uses of MCRG this has not been a problem, however in the study
   \label{fig:wflow_opt}
 \end{figure}
 
-The Wilson Flow is a continuous smearing transformation that can be related to the \MSbar scheme in perturbation theory.
+The Wilson Flow is a continuous smearing transformation~\cite{Narayanan:2006rf} that can be related to the \MSbar scheme in perturbation theory~\cite{Luscher:2010iy}.
 The Wilson Flow removes UV fluctuations but does not effect IR physics.
 As shown in \fig{fig:wflow_opt} the Wilson Flow moves the system along a surface of constant lattice scale in the infinite dimensional action space.
 
-The Wilson Flow can be used on its own to compute a renormalized step-scaling function using a similar method to the Schr\"dinger functional method.
+The Wilson Flow can be used on its own to compute a renormalized step-scaling function using a similar method to the Schr\"dinger functional method~\cite{Fodor:2012td, Fodor:2012qh}.
 This approach is promising but is only well understood at weak couplings.
 At stronger couplings in the presence of an infrared fixed point it is not clear how to interpret the continuum limit.
 
@@ -112,8 +113,8 @@ Because we are no longer changing the renormalized trajectory in the optimizatio
 \section{Results for 12 Flavors}
 \label{sec:results}
 \begin{figure}[ht]
-    \includegraphics[width=0.45\textwidth]{fig/12flav_6-12-24_3lm.pdf}\hfill
-    \includegraphics[width=0.45\textwidth]{fig/12flav_8-16-32_44_as_3lm.pdf}
+  \includegraphics[width=0.45\textwidth]{fig/12flav_6-12-24_3lm.pdf}\hfill
+  \includegraphics[width=0.45\textwidth]{fig/12flav_8-16-32_44_as_3lm.pdf}
   \caption{Bare step scaling function predicted by three lattice matching with (left) $6^4$, $12^4$, $24^4$ lattices blocked down to $3^4$, and (right) $8^4$, $16^4$, $32^4$ lattices blocked down to $4^4$.  Scheme~1 is shown in red, scheme~2 in black and scheme~3 in blue.  The error bars come from the standard deviation of predictions using different observables.}
 \label{fig:multischeme}
 \end{figure}
