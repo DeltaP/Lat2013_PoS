@@ -1,8 +1,132 @@
-\providecommand{\href}[2]{#2}\begingroup\raggedright\begin{thebibliography}{1}
+\providecommand{\href}[2]{#2}\begingroup\raggedright\begin{thebibliography}{10}
 
 \bibitem{Petropoulos:2012mg}
 G.~Petropoulos, A.~Cheng, A.~Hasenfratz and D.~Schaich, {\em PoS} {\bf Lattice
   2012} (2012) 051 [\href{http://arxiv.org/abs/1212.0053}{{\tt
- arXiv:1212.0053}}].
+  arXiv:1212.0053}}].
+
+\bibitem{Appelquist:2009ty}
+T.~Appelquist, G.~T. Fleming and E.~T. Neil,
+  \href{http://dx.doi.org/10.1103/PhysRevD.79.076010}{{\em Phys. Rev.} {\bf
+  D79} (2009) 076010} [\href{http://arxiv.org/abs/0901.3766}{{\tt
+  arXiv:0901.3766}}].
+
+\bibitem{Deuzeman:2009mh}
+A.~Deuzeman, M.~P. Lombardo and E.~Pallante,
+  \href{http://dx.doi.org/10.1103/PhysRevD.82.074503}{{\em Phys. Rev.} {\bf
+  D82} (2010) 074503} [\href{http://arxiv.org/abs/0904.4662}{{\tt
+  arXiv:0904.4662}}].
+
+\bibitem{Fodor:2011tu}
+Z.~Fodor, K.~Holland, J.~Kuti, D.~Nogradi and C.~Schroeder,
+  \href{http://dx.doi.org/10.1016/j.physletb.2011.07.037}{{\em Phys. Lett.}
+  {\bf B703} (2011) 348--358} [\href{http://arxiv.org/abs/1104.3124}{{\tt
+  arXiv:1104.3124}}].
+
+\bibitem{Hasenfratz:2011xn}
+A.~Hasenfratz, \href{http://dx.doi.org/10.1103/PhysRevLett.108.061601}{{\em
+  Phys. Rev. Lett.} {\bf 108} (2012) 061601},
+  [\href{http://arxiv.org/abs/1106.5293}{{\tt arXiv:1106.5293}}].
+
+\bibitem{DeGrand:2011cu}
+T.~DeGrand, \href{http://dx.doi.org/10.1103/PhysRevD.84.116901}{{\em Phys. Rev.}
+  {\bf D84} (2011) 116901} [\href{http://arxiv.org/abs/1109.1237}{{\tt
+  arXiv:1109.1237}}].
+
+\bibitem{Cheng:2011ic}
+A.~Cheng, A.~Hasenfratz and D.~Schaich,
+  \href{http://dx.doi.org/10.1103/PhysRevD.85.094509}{{\em Phys. Rev.} {\bf
+  D85} (2012) 094509} [\href{http://arxiv.org/abs/1111.2317}{{\tt
+  arXiv:1111.2317}}].
+
+\bibitem{Fodor:2012uw}
+Z.~Fodor, K.~Holland, J.~Kuti, D.~Nogradi, C.~Schroeder and C.~H. Wong,
+  \href{http://pos.sissa.it/archive/conferences/164/025/Lattice
+  2012_025.pdf}{{\em PoS} {\bf Lattice 2012} (2012) 025},
+  [\href{http://arxiv.org/abs/1211.3548}{{\tt arXiv:1211.3548}}].
+
+\bibitem{Fodor:2012et}
+Z.~Fodor, K.~Holland, J.~Kuti, D.~Nogradi, C.~Schroeder and C.~H. Wong,
+  \href{http://pos.sissa.it/archive/conferences/164/279/Lattice
+  2012_279.pdf}{{\em PoS} {\bf Lattice 2012} (2012) 279},
+  [\href{http://arxiv.org/abs/1211.4238}{{\tt arXiv:1211.4238}}].
+
+\bibitem{Appelquist:2011dp}
+T.~Appelquist, G.~T. Fleming, M.~F. Lin, E.~T. Neil and D.~Schaich,
+  \href{http://dx.doi.org/10.1103/PhysRevD.84.054501}{{\em Phys. Rev.} {\bf
+  D84} (2011) 054501} [\href{http://arxiv.org/abs/1106.2148}{{\tt
+  arXiv:1106.2148}}].
+
+\bibitem{Aoki:2012eq}
+Y.~Aoki, T.~Aoyama, M.~Kurachi, T.~Maskawa, K.-i. Nagai, H.~Ohki, A.~Shibata,
+  K.~Yamawaki and T.~Yamazaki,
+  \href{http://dx.doi.org/10.1103/PhysRevD.86.054506}{{\em Phys. Rev.} {\bf
+  D86} (2012) 054506} [\href{http://arxiv.org/abs/1207.3060}{{\tt 1207.3060}}].
+
+\bibitem{Aoki:2013pca}
+Y.~Aoki, T.~Aoyama, M.~Kurachi, T.~Maskawa, K.-i. Nagai, H.~Ohki, E.~Rinaldi,
+  A.~Shibata, K.~Yamawaki and T.~Yamazaki,
+  \href{http://arxiv.org/abs/1302.4577}{{\tt arXiv:1302.4577}}.
+
+\bibitem{Itou:2012qn}
+E.~Itou, \href{http://dx.doi.org/10.1093/ptep/ptt053}{{\em PTEP} {\bf 2013}
+  (2013) 083B01} [\href{http://arxiv.org/abs/1212.1353}{{\tt
+  arXiv:1212.1353}}]; \href{http://arxiv.org/abs/1307.6645}{{\tt
+  arXiv:1307.6645}}.
+
+\bibitem{Lin:2012iw}
+C.-J.~D. Lin, K.~Ogawa, H.~Ohki and E.~Shintani,
+  \href{http://dx.doi.org/10.1007/JHEP08(2012)096}{{\em JHEP} {\bf 1208} (2012)
+  096} [\href{http://arxiv.org/abs/1205.6076}{{\tt arXiv:1205.6076}}].
+
+\bibitem{Jin:2012dw}
+X.-Y. Jin and R.~D. Mawhinney, {\em PoS} {\bf Lattice 2011} (2012) 066,
+  [\href{http://arxiv.org/abs/1203.5855}{{\tt arXiv:1203.5855}}].
+
+\bibitem{Cheng:2013eu}
+A.~Cheng, A.~Hasenfratz, G.~Petropoulos and D.~Schaich,
+  \href{http://dx.doi.org/10.1007/JHEP07(2013)061}{{\em JHEP} {\bf 1307} (2013)
+  061} [\href{http://arxiv.org/abs/1301.1355}{{\tt arXiv:1301.1355}}].
+
+\bibitem{Hasenfratz:2013uha}
+A.~Hasenfratz, A.~Cheng, G.~Petropoulos and D.~Schaich,
+  \href{http://arxiv.org/abs/1303.7129}{{\tt arXiv:1303.7129}}.
+
+\bibitem{Hasenfratz:2013eka}
+A.~Hasenfratz, A.~Cheng, G.~Petropoulos and D.~Schaich, {\em PoS} {\bf LATTICE
+  2013} (2013) 075 [\href{http://arxiv.org/abs/1310.1124}{{\tt
+  arXiv:1310.1124}}].
+
+\bibitem{Giedt:2012LAT}
+J.~Giedt, \href{http://pos.sissa.it/archive/conferences/164/006/Lattice
+  2012_006.pdf}{{\em PoS} {\bf Lattice 2012} (2012) 006}.
+
+\bibitem{Schaich:2012fr}
+D.~Schaich, A.~Cheng, A.~Hasenfratz and G.~Petropoulos,
+  \href{http://pos.sissa.it/archive/conferences/164/028/Lattice
+  2012_028.pdf}{{\em PoS} {\bf Lattice 2012} (2012) 028}
+  [\href{http://arxiv.org/abs/1207.7164}{{\tt arXiv:1207.7164}}].
+
+\bibitem{Narayanan:2006rf}
+R.~Narayanan and H.~Neuberger,
+  \href{http://dx.doi.org/10.1088/1126-6708/2006/03/064}{{\em JHEP} {\bf 0603}
+  (2006) 064} [\href{http://arxiv.org/abs/hep-th/0601210}{{\tt
+  hep-th/0601210}}].
+
+\bibitem{Luscher:2010iy}
+M.~Luscher, \href{http://dx.doi.org/10.1007/JHEP08(2010)071}{{\em JHEP} {\bf
+  1008} (2010) 071} [\href{http://arxiv.org/abs/1006.4518}{{\tt
+  arXiv:1006.4518}}].
+
+\bibitem{Fodor:2012td}
+Z.~Fodor, K.~Holland, J.~Kuti, D.~Nogradi and C.~H. Wong,
+  \href{http://dx.doi.org/10.1007/JHEP11(2012)007}{{\em JHEP} {\bf 1211} (2012)
+  007} [\href{http://arxiv.org/abs/1208.1051}{{\tt arXiv:1208.1051}}].
+
+\bibitem{Fodor:2012qh}
+Z.~Fodor, K.~Holland, J.~Kuti, D.~Nogradi and C.~H. Wong,
+  \href{http://pos.sissa.it/archive/conferences/164/050/Lattice
+  2012_050.pdf}{{\em PoS} {\bf Lattice 2012} (2012) 050}
+  [\href{http://arxiv.org/abs/1211.3247}{{\tt arXiv:1211.3247}}].
 
 \end{thebibliography}\endgroup

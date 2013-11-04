@@ -72,12 +72,8 @@
 %
 % "New-style" arXiv identifiers are also supported.
 %
-<<<<<<< HEAD
 %     archivePrefix = "arXiv",
 %     eprint    = "0707.3168",
-=======
-%     archivePrefix = "arXiv",%     eprint    = "0707.3168",
->>>>>>> 31d3860ca3b8e90c19ced123370695b5e0c089cb
 %     primaryClass = "hep-th",
 %
 % produces
@@ -99,11 +95,7 @@
 %       doi = "10.xxxx"
 %
 %  field is present, then the journal reference becomes a
-<<<<<<< HEAD
 %  clickable hyperlink to the online journal version of the paper.
-=======
-%  clickable hyperlink to the online journal version of the paper.
->>>>>>> 31d3860ca3b8e90c19ced123370695b5e0c089cb
 %
 % The bibtex output produced by SPIRES, while far from perfect, is pretty
 % suitable for use with this style. Indeed, this style was designed with
@@ -1254,7 +1246,3 @@ FUNCTION {end.bib}
 }
 
 EXECUTE {end.bib}
-<<<<<<< HEAD
-
-=======
->>>>>>> 31d3860ca3b8e90c19ced123370695b5e0c089cb
